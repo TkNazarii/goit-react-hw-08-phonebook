@@ -1,0 +1,33 @@
+.form {
+  width: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 10px 13px 13px -8px var(--border-color-shadow);
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.inputName {
+  margin-left: 28px;
+  border-width: 1px;
+  border-color: var(--border-color);
+  font-size: 18px;
+  color: var(--primary-color);
+}
+.inputNumber {
+  composes: inputName;
+  margin-left: 10px;
+}
+
+.inputName:focus,
+.inputName:hover,
+.inputName:active {
+  outline-color: var(--border-color-shadow);
+}

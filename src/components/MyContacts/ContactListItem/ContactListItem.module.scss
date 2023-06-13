@@ -1,0 +1,16 @@
+.item {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+

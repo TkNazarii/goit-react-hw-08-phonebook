@@ -1,0 +1,37 @@
+.form {
+  width: 390px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+
+  padding: 20px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.label {
+  flex: 0 0 150px;
+  text-align: left;
+  color: var(--primary-color);
+}
+
+.input {
+  border: 1px solid var(--border-color);
+  padding: 11px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.input:focus,
+.input:hover,
+.input:active {
+  border-color: var(--primary-color);
+}
+
