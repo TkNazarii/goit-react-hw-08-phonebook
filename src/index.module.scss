@@ -40,6 +40,10 @@ p {
   margin: 0;
 }
 
+a {
+	color: var(--primary-color);
+}
+
 a:active,
 a:visited {
 	color: var(--primary-color);
