@@ -1,19 +1,25 @@
-import { lazy, Suspense } from 'react';
+// import { lazy, Suspense } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
 import PublicRoute from 'components/PublicRoute/PublicRoute';
-import Loader from 'components/Loader/Loader';
+import HomePage from 'pages/HomePage/HomePage';
+import RegisterPage from 'pages/RegisterPage/RegisterPage';
+import LoginPage from 'pages/LoginPage/LoginPage';
+import MyContactsPage from 'pages/MyContactsPage/MyContactsPage';
+// import Loader from 'components/Loader/Loader';
 
-const HomePage = lazy(() => import('pages/HomePage/HomePage'));
-const RegisterPage = lazy(() => import('pages/RegisterPage/RegisterPage'));
-const LoginPage = lazy(() => import('pages/LoginPage/LoginPage'));
-const MyContactsPage = lazy(() =>
-  import('pages/MyContactsPage/MyContactsPage')
-);
+
+
+// const HomePage = lazy(() => import('pages/HomePage/HomePage'));
+// const RegisterPage = lazy(() => import('pages/RegisterPage/RegisterPage'));
+// const LoginPage = lazy(() => import('pages/LoginPage/LoginPage'));
+// const MyContactsPage = lazy(() =>
+//   import('pages/MyContactsPage/MyContactsPage')
+// );
 
 const UserRoutes = () => {
   return (
-    <Suspense fallback={<Loader />}>
+    // <Suspense fallback={<Loader />}>
       <Routes>
         <Route element={<PublicRoute />}>
           <Route path="/" element={<HomePage />} />
@@ -27,7 +33,7 @@ const UserRoutes = () => {
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </Suspense>
+    // </Suspense>
   );
 };
 
